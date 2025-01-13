@@ -45,7 +45,7 @@ async def get_financial_data(
     for row in data:
         date = int(row["date"][:4])  # Extract year from date
 
-        # Apply all conditions together in one block
+        # Apply all conditions together in one blockk
         if (
             start_date <= date <= end_date and
             min_revenue <= row.get("revenue", 0) <= max_revenue and
